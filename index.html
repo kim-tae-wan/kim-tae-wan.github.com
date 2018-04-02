@@ -4,10 +4,41 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>소은이 돌잔치</title>
-<link rel="stylesheet" href="***.css">
+<link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>소은이 돌잔치에 초대합니다.</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="vendors/jquery.easings.min.js"></script>
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 </head>
 <body>
-    <h1>소은이 돌잔치</h1>
+    
+    <div id="fullpage">
+    	<div class="section sct">
+            <h1 class="title">First-birthday party <br> INVITATION</h1>
+        </div>
+    	<div class="section sct2">
+            Some section
+        </div>
+    	<div class="section sct3">
+            Some section
+        </div>
+    	<div class="section sct4">
+        	<div class="slide" data-anchor="slide1">Slide 1</div>
+        	<div class="slide" data-anchor="slide2">Slide 2</div>
+        	<div class="slide" data-anchor="slide3">Slide 3</div>
+        	<div class="slide" data-anchor="slide4">Slide 4</div>
+        </div>
+    </div>
 </body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#fullpage').fullpage({
+            'navigation': true,
+            'navigationPosition': 'right'
+        });
+    });
+</script>
 </html>

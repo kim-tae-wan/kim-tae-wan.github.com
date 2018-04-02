@@ -1,0 +1,95 @@
+@charset "UTF-8";
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul {
+    margin: 0;
+    padding: 0
+}
+body,button,input,select,table,textarea {
+    font-size: 10px;
+    font-family:'Open Sans',Helvetica Neue,Aria, Helvetica,"Apple SD Gothic Neo",sans-serif
+}
+
+button,input {
+    border-radius: 0;
+    border:0;
+    background:none;
+    -webkit-appearance:none;
+}
+
+fieldset,img {
+    border: 0;
+    vertical-align:top;
+}
+
+ol,ul {
+    list-style: none
+}
+
+
+/* content */
+.title{
+    position:relative;
+    width:100%;
+    padding-bottom:70%;
+    font-size:2.15rem;
+    height:50px;
+    line-height:50px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    text-align:center;
+    color:#ffd9d0;
+    z-index:100;
+}
+
+.sct{
+    position:relative;
+    background:url(../img/spot.jpg) 50%;
+    background-size:cover;
+}
+
+.sct:before{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,.3);
+    content:'';
+}
+    
+    
+#fp-nav ul li a span,.fp-slidesNav ul li a span{
+    background:rgba(255,229,223,.35);
+}
+
+
+@media (orientation: landscape){
+    .title{
+        font-size:3rem;
+        padding-bottom:45%;
+    }
+    .title br{
+        display:none;
+    }
+}
+
+
+@media (min-width:1024px){
+    .title{
+        font-size:3rem;
+        padding-bottom:45%;
+    }
+    .title br{
+        display:none;
+    }
+}
+
+
+@media (min-width:1300px){
+    .title{
+        font-size:5rem;
+        padding-bottom:30%;
+    }
+    .title br{
+        display:none;
+    }
+}
