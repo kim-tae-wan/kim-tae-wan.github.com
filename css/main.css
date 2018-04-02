@@ -67,6 +67,10 @@ ol,ul {
     color:#ffadad;
     vertical-align:middle;
 }
+.sct2 .bx{
+    overflow:hidden;
+    white-space:nowrap;
+}
 .sct2 span{
     display:inline-block;
     margin-left:10px;
@@ -82,42 +86,62 @@ ol,ul {
 .sct2 .info{
     margin-left:20px;
 }
-.animated{
-    -webkit-animation: pulse 2s linear infinite;
-    animation: pulse 2s linear infinite
+.active .animated{
+    -webkit-animation: tada 2s linear;
+    animation: tada 2s linear;
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes tada {
     0% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1)
+        -webkit-transform: scale(1);
+        transform: scale(1)
     }
 
-    50% {
-        -webkit-transform: scale(.8);
-        transform: scale(.8)
+    10%,20% {
+        -webkit-transform: scale(.9) rotate(-8deg);
+        transform: scale(.9) rotate(-8deg)
     }
 
-    100% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1)
+    30%,50%,70% {
+        -webkit-transform: scale(1.1) rotate(8deg);
+        transform: scale(1.1) rotate(8deg)
+    }
+
+    40%,60% {
+        -webkit-transform: scale(1.1) rotate(-8deg);
+        transform: scale(1.1) rotate(-8deg)
+    }
+
+    100%,80% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0)
     }
 }
 
-@keyframes pulse {
+@keyframes tada {
     0% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1)
+        -webkit-transform: scale(1);
+        transform: scale(1)
     }
 
-    50% {
-        -webkit-transform: scale(.8);
-        transform: scale(.8)
+    10%,20% {
+        -webkit-transform: scale(.9) rotate(-8deg);
+        transform: scale(.9) rotate(-8deg)
     }
 
-    100% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1)
+    30%,50%,70% {
+        -webkit-transform: scale(1.1) rotate(8deg);
+        transform: scale(1.1) rotate(8deg)
+    }
+
+    40%,60% {
+        -webkit-transform: scale(1.1) rotate(-8deg);
+        transform: scale(1.1) rotate(-8deg)
+    }
+
+    100%,80% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0)
     }
 }
 /*
