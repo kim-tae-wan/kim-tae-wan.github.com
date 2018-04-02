@@ -13,13 +13,13 @@
 <script src="vendors/jquery.easings.min.js"></script>
 <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=dDxi2eckWwL9vaQpPB14&submodules=geocoder"></script>
 </head>
 <body>
     
     <div id="fullpage">
     	<div class="section sct">
             <h1 class="title">First-birthday party <br> INVITATION</h1>
+            <span class="arrow"><i class="fas fa-angle-double-down animated2"></i></span>
         </div>
     	<div class="section sct2">
             <div class="bx">
@@ -29,7 +29,7 @@
                     <span><i class="far fa-calendar-alt animated"></i></span>
                 </div>
             </div>
-            <div class="bx" style="margin-bottom:30px;">
+            <div class="bx">
                 <h2>Time</h2>
                 <div class="info">
                     <p>am 11:00 ~ pm 1:30</p>
@@ -37,43 +37,16 @@
                 </div>
             </div>
             
-            <div class="bx">
+            <div class="bx last">
                 <h2>Place</h2>
                 <div class="info">
-                    <div id="map" style="width:100%;height:200px;"></div>
-                    <script>
-                      var map = new naver.maps.Map('map');
-                      var myaddress = '불정로 6';// 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
-                      naver.maps.Service.geocode({address: myaddress}, function(status, response) {
-                          if (status !== naver.maps.Service.Status.OK) {
-                              return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
-                          }
-                          var result = response.result;
-                          // 검색 결과 갯수: result.total
-                          // 첫번째 결과 결과 주소: result.items[0].address
-                          // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
-                          var myaddr = new naver.maps.Point(result.items[0].point.x, result.items[0].point.y);
-                          map.setCenter(myaddr); // 검색된 좌표로 지도 이동
-                          // 마커 표시
-                          var marker = new naver.maps.Marker({
-                            position: myaddr,
-                            map: map
-                          });
-                          // 마커 클릭 이벤트 처리
-                          naver.maps.Event.addListener(marker, "click", function(e) {
-                            if (infowindow.getMap()) {
-                                infowindow.close();
-                            } else {
-                                infowindow.open(map, marker);
-                            }
-                          });
-                          // 마크 클릭시 인포윈도우 오픈
-                          var infowindow = new naver.maps.InfoWindow({
-                              content: '<h4> [네이버 개발자센터]</h4><a href="https://developers.naver.com" target="_blank"><img src="https://developers.naver.com/inc/devcenter/images/nd_img.png"></a>'
-                          });
-                      });
-                      </script>
+                    <p>경기도 성남시 분당구 VIPS 판교점</p>
+                    <a href="http://naver.me/5n6GGxtf" target="_blank" class="map">
+                        <img src="img/map.png" width="100%">
+                    </a>
                 </div>
+                    
+                    
             </div>
             
             
