@@ -36,7 +36,7 @@ ol,ul {
     box-sizing:border-box;
     -webkit-box-sizing:border-box;
     text-align:center;
-    color:#ffd9d0;
+    color:#ffadad;
     z-index:100;
 }
 
@@ -52,13 +52,13 @@ ol,ul {
     left:0;
     right:0;
     bottom:0;
-    background-color:rgba(0,0,0,.3);
+    background-color:rgba(0,0,0,.35);
     content:'';
 }
     
     
 #fp-nav ul li a span,.fp-slidesNav ul li a span{
-    background:rgba(255,229,223,.35);
+    background:rgba(255,173,173,.35);
 }
 
 
