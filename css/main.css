@@ -143,16 +143,46 @@ ol,ul {
     bottom:0;
     border:1px solid rgba(0,0,0,.1);
 }
-    
-#fp-nav ul li a span,.fp-slidesNav ul li a span{
-    background:rgba(255,255,255,.35);
+.sct3 h2{
+    position:absolute;
+    top:30px;
+    left:20px;
+    font-size:3rem;
+    line-height:3.5rem;
+    color:#ffadad;
+    z-index:100;
 }
 
 
 
 
+body[class^="fp-viewing-2-"] #fp-nav{
+    display:none;
+}
+#fp-nav ul li a span,.fp-slidesNav ul li a span{
+    background:rgba(255,255,255,.35);
+}
 
+#fp-nav.right{
+    right:8px;
+}
 
+.fp-controlArrow{
+    margin-top:-6px;
+}
+
+.fp-controlArrow.fp-prev{
+    left: 10px;
+    width: 0;
+    border-width: 12px 10px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.fp-controlArrow.fp-next{
+    right:10px;
+    border-width: 12px 0 12px 10px;
+    border-color: transparent transparent transparent #fff;
+}
 
 @media (orientation: landscape){
     .title{
