@@ -19,7 +19,7 @@
     <div id="fullpage">
     	<div class="section sct">
             <h1 class="title">First-birthday party <br> INVITATION</h1>
-            <span class="arrow"><i class="fas fa-angle-double-down animated2"></i></span>
+            <a href="#" id="moveSectionDown" class="arrow"><i class="fas fa-angle-double-down animated2"></i></a>
         </div>
     	<div class="section sct2">
             <div class="bx">
@@ -45,21 +45,16 @@
                         <img src="img/map.PNG" width="100%">
                     </a>
                 </div>
-                    
-                    
             </div>
-            
-            
-            
         </div>
-    	<div class="section sct3">
-            Some section
-        </div>
-    	<div class="section sct4">
+        <div class="section sct3">
         	<div class="slide" data-anchor="slide1">Slide 1</div>
         	<div class="slide" data-anchor="slide2">Slide 2</div>
         	<div class="slide" data-anchor="slide3">Slide 3</div>
         	<div class="slide" data-anchor="slide4">Slide 4</div>
+        </div>
+        <div class="section sct4">
+            sct last
         </div>
     </div>
 </body>
@@ -69,6 +64,10 @@
             'navigation': true,
             'navigationPosition': 'right'
         });
+        $('#moveSectionDown').click(function(e){
+			e.preventDefault();
+			$.fn.fullpage.moveSectionDown();
+		});
     });
 </script>
 </html>
