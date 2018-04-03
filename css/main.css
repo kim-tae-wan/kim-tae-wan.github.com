@@ -147,16 +147,27 @@ ol,ul {
     position:absolute;
     top:30px;
     left:20px;
+    font-size:2rem;
+    line-height:3rem;
+    color:#ffadad;
+    z-index:100;
+}
+.sct4 .sct4_info{
+    position:relative;
+    height:100px;
+    padding:15px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.sct4 .sct4_info h2{
     font-size:3rem;
     line-height:3.5rem;
-    color:#ffadad;
+    color:#222;
     z-index:100;
 }
 
 
-
-
-body[class^="fp-viewing-2-"] #fp-nav{
+body[class^="fp-viewing-2-"] #fp-nav,body[class^="fp-viewing-3"] #fp-nav{
     display:none;
 }
 #fp-nav ul li a span,.fp-slidesNav ul li a span{
