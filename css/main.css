@@ -220,6 +220,40 @@ body[class^="fp-viewing-2-"] #fp-nav,body[class^="fp-viewing-3"] #fp-nav{
     .title br{
         display:none;
     }
+    .sct2 .fp-tableCell{
+        padding:100px 100px;
+    }
+    .sct3 .fp-slides{
+        width:1024px;
+        margin:0 auto;
+        padding:50px 0;
+    }
+    .sct3 .fp-slides .slide_box{
+        text-align:center;
+    } 
+    .sct3 .fp-slides img{
+        width:480px !important;
+    }
+    .sct2 .bx{
+        display:inline-block;
+        width:25%;
+    }
+    .sct2 .bx.last{
+        display:block;
+        margin-top:100px;
+        width:50%;
+    }
+    .fp-controlArrow.fp-next {
+        right: 50px;
+        border-width: 50px 0 58px 58px;
+        border-color: transparent transparent transparent #999;
+    }
+    .fp-controlArrow.fp-prev {
+        left: 50px;
+        width: 0;
+        border-width: 58px 50px 58px 0;
+        border-color: transparent #999 transparent transparent;
+    }
 }
 
 
